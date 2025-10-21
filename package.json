@@ -1,0 +1,28 @@
+{
+  "name": "digi-badge",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "dev:full": "concurrently -n VITE,API -c green,blue \"npm run dev\" \"npm run server\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "did-jwt": "^8.0.18",
+    "did-jwt-vc": "^4.0.16",
+    "did-resolver": "^4.1.0",
+    "express": "^5.1.0",
+    "key-did-resolver": "^4.0.0",
+    "web-did-resolver": "^2.0.31"
+  }
+}
